@@ -40,7 +40,6 @@ h4 {
 
 body {
     background-color: #F3F4F6;
-    background-image: url("/background-image@2x.png");
     background-repeat: no-repeat; /* Ensures the image does not repeat */
     background-position: center top;
     background-size: contain;
