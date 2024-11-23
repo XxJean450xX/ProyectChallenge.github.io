@@ -40,7 +40,7 @@ h4 {
 
 body {
     background-color: #F3F4F6;
-    background-image: url(assets/Device/background-image@2x.png);
+    background-image: url('../assets/device/background-image.jpg');
     background-repeat: no-repeat; /* Ensures the image does not repeat */
     background-position: center top;
     background-size: contain;
