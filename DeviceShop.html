@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device_Shop_Checkout</title>
+    <link rel="stylesheet" href="css/style2.css">   
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Head">
+        <h1>Checkout</h1>
+        <p class="Items">3 ITEMS</p>  
+    </div>
+    
+    <section>
+        <div class="Left">
+            <div class="Product">
+                <div class="Imagen"><img src="assets/Device/Gold@2x.png" alt=""></div>
+                
+                <div class = "Subproduct">
+
+                    <div class="Titulo-precio">
+                        <h3 class="Titulo">iPhone 12 Pro</h3><!-- Nombre del producto -->
+                        <h3 class="Precio">$999.00</h3><!-- Precio del producto -->
+                    </div>
+                    <h4 class="Color">Golden</h4><!-- Color del producto -->
+                    <div class="Cantidad-eliminar">
+                        <h4 id="Cantidad">x 1</h4><!-- Cantidad del producto -->
+                        <h4 id="Eliminar">✕</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Product">
+                <div class="Imagen"><img src="assets/Device/Apple-watchx2.png" alt=""></div>
+                
+                <div class = "Subproduct">
+
+                    <div class="Titulo-precio">
+                        <h3 class="Titulo">Apple Watch</h3><!-- Nombre del producto -->
+                        <h3 class="Precio">$399.00</h3><!-- Precio del producto -->
+                    </div>
+                    <h4 class="Color">Blue</h4><!-- Color del producto -->
+                    <div class="Cantidad-eliminar">
+                        <h4 id="Cantidad">x 1</h4><!-- Cantidad del producto -->
+                        <h4 id="Eliminar">✕</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Product">
+                <div class="Imagen"><img src="assets/Device/iMac@2x.png" alt=""></div>
+                
+                <div class = "Subproduct">
+
+                    <div class="Titulo-precio">
+                        <h3 class="Titulo">iMac</h3><!-- Nombre del producto -->
+                        <h3 class="Precio">$1199.00</h3><!-- Precio del producto -->
+                    </div>
+                    <h4 class="Color">Green</h4><!-- Color del producto -->
+                    <div class="Cantidad-eliminar">
+                        <h4 id="Cantidad">x 1</h4><!-- Cantidad del producto -->
+                        <h4 id="Eliminar">✕</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLOCAR Linea que separe la seccion -->
+            <div class="separator-line"></div>
+
+
+            <div class="Cupon">
+                <input type="text" placeholder="Enter coupon code">
+                <button>Apply Coupon</button>
+            </div>
+            
+            <div class="Sub-total" id="Sub">
+                <h3>Sub total</h3>
+                <h3>$2597.0</h3>
+            </div>    
+            <div class="Sub-total">
+                <h3>Tax</h3>
+                <h3>$623.28</h3>
+            </div>
+            <div class="Sub-total">
+                <h3>Total</h3>
+                <h3>$3220.28</h3>
+            </div>
+        </div> 
+        
+
+
+        <div class="Right">
+            <h3>Contact Information</h3>
+            <p>First & Last name</p>
+            <input type="text" placeholder="Enter First & Last name">
+            <p>Email Address</p>
+            <input type="text" placeholder="Enter Email Address">
+            <div class="Contry-postal">
+                <div>
+                    <p>Country</p>
+                    <input type="text" placeholder="Enter your Country">
+                </div>
+                <div>
+                    <p>Postal Code</p>
+                    <input type="text" placeholder="0000">
+                </div>
+            </div>
+            <button>Continue</button>
+        </div>
+
+        
+    </section>
+
+</body>
+</html>

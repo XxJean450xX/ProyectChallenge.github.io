@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F2DDCC;
+}
+body {
+    background: linear-gradient(to bottom, #0c111d 65%, #222D4C);
+    background-attachment: fixed;/*Para que el gradiente no se mueva al hacer scroll*/
+    background-size: cover; /* Asegura que el fondo se ajuste */
+    text-align: center;
+    padding: 5rem;
+    align-items: center;
+}
+h1 {
+    font-size: 4.25rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #9EA5C2;
+    letter-spacing: 1.5px;
+    margin: 0.5rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 9rem;
+    margin-top: 10rem;
+    gap: 2.5rem;
+}
+a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Oculta el enlace */
+    z-index: 1;
+}
+
+.Proyectos {
+    position: relative; /* Restringe el enlace al tamaño del contenedor */
+    display: flex;
+    flex-direction: column;
+    background-color: #181f35;
+    width: 15rem;
+    height: 16rem;
+    text-align: center;
+    border: 1rem solid #181f35;
+    border-radius: 1.25rem;
+    transition: transform 0.25s ease, box-shadow 0.3s ease; /*Transicion al hacer el hover, se coloca en el selector sin :hover*/
+}
+.Proyectos:hover{
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(242, 221, 204, 0.6); /* Intensifica la sombra */
+}   
+h4 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+img {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    width: auto;
+    height: 8.5rem;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; /* Una columna */
+        gap: 3rem; /* Espacio ajustado entre elementos */
+        margin: 1rem;
+        margin-top: 10rem;
+        place-items: center;
+    }
+
+    body {
+        background-position: center; /* Ajusta la posición del gradiente */
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+}

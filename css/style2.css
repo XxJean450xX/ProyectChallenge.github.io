@@ -1,0 +1,209 @@
+/*Los selectores son formas de llamar elementos HTML existen varios como:
+
+        #ID Selectors = #elementid{}
+        * Selectors = *{}
+        .class Selectors = .nameclass{}
+        Selector = Nombre de elemento HTML (input{})
+
+  Se le pueden añadir tipos a cada selector para filtrar maas la informacion por ejemplo: 
+
+        input[type = "Text"] {}
+        a[rel = "nofollow] {}
+        img[alt = "logo"] {}
+*/
+
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 25px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+h3 {
+    font-size: 27px;
+    font-weight: 550;
+    color: #1D1D1F;
+}
+h4 {
+    font-size: 23px;
+    font-weight: 400;
+    color: #1D1D1F;
+}
+
+body {
+    background-color: #F3F4F6;
+    background-image: url(assets/Device/background-image@2x.png);
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-position: center top;
+    background-size: contain;
+    padding: 0px;
+}
+
+button {
+    background-color: #1D1D1F; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-size: 23px; /* Tamaño del texto */
+    font-weight: 500;
+    padding: 20px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    text-align: center;
+}
+
+.Head {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Items {
+    font-weight: 650;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: #1D1D1F;
+    width: 75px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 25px;
+    align-content: center;
+}
+
+section {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*-------------------------------------------------*/
+.Left {
+    padding: 50px;
+    border-radius: 25px 0 0 25px;
+    background-color: #E6E7EB;;
+}
+.Imagen {
+    background-color: #ffffff;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid #cecece;
+    margin-right: 30px;
+}
+.Product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.Subproduct {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Color {
+    margin-left: 10px;
+}
+.Titulo-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+.Cantidad-eliminar {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Cantidad {
+    font-size: 23px;
+    margin-left: 10px;
+}
+#Eliminar {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.separator-line {
+    border-top: 3px solid #d1d1d1; /* Línea de color gris claro */
+    margin: 30px 0; /* Espaciado vertical */
+}
+
+
+.Left input {
+    background-color: white;
+    width: 100%;
+}
+
+.Cupon {
+    display: flex;
+    gap: 20px;
+}
+.Cupon button {
+    width: 270px;
+
+}
+
+.Sub-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+#Sub {
+    margin-top: 35px;
+}
+/*-------------------------------------------------*/
+
+.Right {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 0 25px 25px 0;
+    background-color: #ffffff;
+}
+.Right p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
+
+input {
+    box-sizing: border-box; /*PERMITE HACER RESPETAR EL PADDING DEL CONTENEDOR. Los inputs no respetan el padding por ser un bloque de linea*/
+    padding: 20px 20px;
+    width: 100%; 
+    border: 2px solid #cecece;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    outline-color: #394150;
+    color: #1D1D1F;
+    background-color: #F3F4F6;
+    font-size: 23px;
+    
+}
+.Contry-postal {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*RESPONSIVE------------------*/
+
